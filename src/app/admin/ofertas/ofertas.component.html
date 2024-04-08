@@ -1,0 +1,35 @@
+<table>
+  <thead>
+    <tr>
+      <th>Ratio</th>
+      <th>Nombre: Average</th>
+      <th>Tipo de Orden</th>
+      <th>Moneda</th>
+      <th>Monto</th>
+      <th>{{ headerText == "Recibir"?"Recibes Moneda - Pagas Monto": "Recibes Monto - Pagas Moneda" }}</th>
+      <th>Status</th>
+      <th>Mensaje</th>
+      <th>Fecha de creada</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let offer of offers">
+      <td>{{ offer.Ratio | number:'1.2-2' }}</td>
+      <td>{{ offer.name }}</td>
+      <td>{{ offer.type }}</td>
+      <td>{{ offer.coin }}</td>
+      <td>{{ offer.amount }}</td>
+      <td>{{ offer.receive | number:'1.2-2' }}</td>
+      <td>{{ offer.status }}</td>
+      <td>{{ offer.message }}</td>
+      <td>{{ offer.ultimaFecha | date:'dd/MM/yyyy HH:mm' }}</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<br>
+<div class="button-container">
+  <button (click)="opcionesComponente()" class="vista-button">Opciones Qvapay</button>
+  <button (click)="logout()" class="logout-button">Volver al Login</button>
+</div>

@@ -1,0 +1,8 @@
+{
+ "/api": {
+    "target": "https://qvapay.com",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+ }
+}

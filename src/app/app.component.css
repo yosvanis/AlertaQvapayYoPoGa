@@ -1,0 +1,105 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #343a40;
+  font-weight: bold; /* Hacer los labels en negrita */
+}
+
+.form-group input,
+.form-group select {
+  width: 100%; /* Ajustar el ancho para que sean más llamativos */
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 8px; /* Redondear los bordes */
+  background-color: #fff;
+  color: #495057;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+}
+
+.form-group select {
+  height: 40px;
+}
+
+.vista-button {
+  padding: 15px 40px; /* Hacer los botones más grandes */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px; /* Redondear los bordes */
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 16px; /* Aumentar el tamaño de la fuente */
+}
+.vista-button-login {
+  padding: 15px 40px; /* Hacer los botones más grandes */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px; /* Redondear los bordes */
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 16px; /* Aumentar el tamaño de la fuente */
+}
+
+.form-group button:hover {
+  background-color: #0056b3;
+}
+
+.form-group button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.logout-button {
+  background-color: #dc3545;
+  padding: 15px 40px; /* Hacer los botones más grandes */
+  color: white;
+  border: none;
+  border-radius: 20px; /* Redondear los bordes */
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 16px; /* Aumentar el tamaño de la fuente */
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
+
+.label-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #e9ecef; /* Color de fondo claro pero agradable */
+}
+
+.button-container {
+  margin-top: 20px;
+  display: flex; /* Alinear los botones horizontalmente */
+  justify-content: space-between; /* Espaciar los botones */
+  width: 100%; /* Asegurar que los botones ocupen todo el ancho disponible */
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos en una columna */
+  justify-content: center; /* Centra los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  height: 100vh; /* Ajusta la altura al 100% de la altura de la ventana */
+}

@@ -1,0 +1,62 @@
+<div class="container">
+
+  <form (submit)="onSubmit()" *ngIf="isAuthenticated">
+
+    <div class="form-group">
+      <label for="action">Acción:</label>
+      <select id="action" [(ngModel)]="action" name="action">
+        <option value="buy">COMPRAR</option>
+        <option value="sell">VENDER</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="coin">Moneda:</label>
+      <select id="coin" [(ngModel)]="coin" name="coin">
+        <option value="BANK_MLC">BANK_MLC</option>
+        <option value="BANK_CUP">BANK_CUP</option>
+        <option value="TROPIPAY">TROPIPAY</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="coin">Ordenar por:</label>
+      <select id="coin" [(ngModel)]="orden" name="orden">
+        <option value="fecha">FECHA</option>
+        <option value="ratio">RATIO</option>
+
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="min">Mínimo saldo en órdenes en Qvpay:</label>
+      <input type="number" id="min" [(ngModel)]="min" name="min" required>
+    </div>
+
+    <div class="form-group">
+      <label for="max">Máximo saldo en órdenes en Qvpay:</label>
+      <input type="number" id="max" [(ngModel)]="max" name="max" required>
+    </div>
+
+    <div class="form-group">
+      <label for="ratio">Relación Recibido/Saldo:</label>
+      <input type="number" id="ratio" [(ngModel)]="ratio" name="ratio" required>
+    </div>
+
+    <div class="label-container">
+      <label for="descripcion">{{getButtonText()}}</label>
+
+    </div>
+    <div class="button-container">
+      <button class="vista-button" type="submit" [value]="getButtonText()">Ofertas Qvapay</button>
+      <button (click)="logout()" class="logout-button">Volver al Login</button>
+    </div>
+
+  </form>
+
+
+
+</div>
+<br>
+<br>
+<br>
