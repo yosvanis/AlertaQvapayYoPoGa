@@ -31,6 +31,8 @@ export class OfertasComponent implements OnInit {
 
   ngOnInit(): void {
     console.log('OfertasComponent iniciado');
+    console.log(this.offers);
+
     this.sendOffersToTelegram(this.offers);
     //console.log(this.offers);
   }

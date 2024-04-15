@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class TelegramService {
   private telegramApiUrl =
-    'https://api.telegram.org/bot7000635968:AAGj_vRejCOqikhbtZYwC-pfbCiW5Ci_2Wg/sendMessage';
+    'https://api.telegram.org/bot7041376738:AAEfN5AWjzKbrsGF2j4uxKscsXSH51R3Bmg/sendMessage';
 
   constructor(private http: HttpClient) {}
 
